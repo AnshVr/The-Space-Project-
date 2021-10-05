@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Space ... A Fascination </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+<body>
+    <center>
+        <div class="container">
+            <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <i> The Space Mystery <i>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#Tour">What is Space ? </a></li>
+                        <li><a href="#Campus"> Celestial Bodies </a></li>
+                        <li><a href="#books"> Books </a></li>
+                        <li><a href="#environment">What's New About Space ?</a></li>
+                        <li><a href="#Achievements"> FAQ 'S on Space</a></li>
+                        <li><a href="#wri"> Know Your Galaxy- Milk Way </a></li>
+                    </ul>
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFhYZGRgaHR4eGhwcHB4eIRweHCEeGh8fHB4hJS4lHh4rHyEeJjgmLC8xNTU1HCQ7QDs0Py40NTEBDAwMEA8QHhISHjQrJCs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAJ8BPgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwEEBQAGB//EADIQAAEDAgMHAwQDAQADAQAAAAECESEAMQNBUQQSYXGBkfChscEFItHhEzLxQgYUYlL/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAgEQEBAQEAAwEBAQEBAQAAAAAAAQIRAxIhMUETUSIE/9oADAMBAAIRAxEAPwD5Yci9QG/P6rlNapDOWtyy+Mq6+E7OiCszXbrcuHemIJf3cBmg2MZPVSAzFcfaoBwSIIMiLgkHmINQFFQAMsGHADLlUIH6pruXOZyHdgGFaZz0IkMdM6EJprUxOE4fxvHrfOLQUA7OREBwGa8sNdahCLPZ2LM7cAWc+PVhGGAZljaWIzmCKL+GKueIKpTl5/tcQB57Vdw0JSr7wVAXALOOBlubVXUjNmD+danWOAooJG80D5pavWnjZyd4iwvwDhIJ6nuaBSdSx48IyrHULpIN/a/+1A5daKcqelBEkAgg8buJ661PB0sYZIeM4eQEhyeAvS1JP+CmHDh+PF/Zv8NclIKcwpw1mZi5cm7tDa9SwgoS5AhzEwJokhQljNiBrJY/iiKyYYRoAO8cc6kWkZR014NEfqjgQFGQQNTA9Gty6VwHL/O9chJe2c3tmGHCi37hmB04Gz3I65PThJKHi/jVyRcZ6f5nXFXDwjWoR49M4ahBSRfeEhsrNTSWYxIeO1dsmOEu6QoaH9ZzSHJLbrnr8VXz+HDMYuCZMs9ACQQqUl3SRH9Zg6iPSlqAyJtPDlrlU/yAmXAYwBm0X4s5vUmHGU7klyS5Jze55k1G6SDYAB21kAtxlzy4AVIAZyemp/FAgPEB8zYQfOlTS6WsyTSj2qV+efFA/wCPnw1nqmMKs3HrXCPL0JqVJLsQxi8QQCDyYg0gYk8HJgNx+aWkt53+a5HamLCQS0kOHcFLg3D/ANkkPpJe0UdSAqbQ/qoCulSA7AM7ZPMm/FujAZvTtp2IoCSWIWneSxB4TpRy/wABRvTi5n37xnQ/+usIC3G7YDeD3b+ruz8KhOp9Jq5SsKCXHfMG3D/L0KVEPfj7t5pRpku75nXn7cZ51AQSWFRw0BUU3Z8PeUEuA5Ac2mO1ChHj07CSx9+FaZyFgYQQSCQTkz7sEplwHs4ZxIzcAAMmo0iHnTmC78sh1rsLDcxXTnP3kEOwkhmIuA3AxPF9KsIR9pjr6UWBhu+raZw/zV7AwdR/tduMcipFH+GPJeIHeoGHW0vAERDa0J2QDPXLxv1VXMPjHOEHD2cO12h240hWA5KUhROUTo26HcmIHq9auNgbrluT+jdRWZjRZ3ghvzfTvXP5M8TpVSHLcD55NAtOoI16FvcEdKctGbARYE31bI0ndmTD1yaSGCZYdM+AtmNAw79vlp9LRGWfGjUji7iQxguzHpLh7tU4eATAnl3qJKOhUCWJU5L5uY1eh3IqwEQbTwdRz+3QRw9aZsYQD96SpJuBBE5Ew/Q/h+pdVCjiHfKREQbEHWpQC5uN4NAu7KA7gWpuMoKYMWAa/rb09anExFKJWVHeOYZN/tsIMZjKiwuk7ti7k92trZvaplvyOnauWQ7gk8dedGF5/H4tnaiApbvIoQRr7U9awQSSd6G0Ou88ktmLkdStRcyfV+vahcMRi7uVtR3jy1AN7eaXdtJ5ZV26ZbLTQx2y60OIsuZ3jrLn5oA8VyfuLmA7vYMA9iGAA4AVOIlI/q5DD+waWBNiY3nF3IAMOwUhZBBEEFwbyOGdGpT39POVH6AKItkHpRDefBvTls2sRwdjl1zpWIi5btIDyLR04cKnRwlSWcaZjtGtQlBkjL5qSKgWM6RM3noKyphSrj5J/FE7GR31ok7u6Xd4Zma5fezJs3XhQnWMopJECSCnJ37Q9LUG4nQ98qkEvxrlIIeCCKYMxkoDFCiXyKQkj1L/AK7CvEdtPPT8nhSn85VDu/nn6qfYLGG0g6wWudDP9dW4UKSNfQUoHjTEJewfpVSgSFZGdHLN+r96ndckwJygToNKAqypiD5wq8gzDDs9WDhDkR3LnLXWq2Gpq0N92Mi3EhsxbOa6/HmWKJKeDWgO3q92erWACWApeGneMzOss+revpWhg4LXH7411eLHfpSLf07DDyHiMp1rWTsgUYtxY1S2BhlfhXoMHDDEEzcNW+r6xpIpHY1JgTHpRHZSA7elbH0rZgpTE3r1GJ9FTuO1cfl/+mY1ynfj5XtuBfSY9POVZOPs0v6eXr2m37GEqMOMwbVkfUUnEWpRSlLt9qRupAAAYDIRT1qaZXN68ycFvGyoV7OXCgAHdgDp1cdb1sK2Xxu3z2oxsRcBpOTdu/zWGsjjCwtmUJYZ3bQ5Hy1O2daksUqIIBTGhdxyLl4zrcxPpxc53vrnfjVNOzqSxEEFwcwRMHgz0pCueMzEQd0Fhq8E6cwHqvuEZZ3yc25Z1pbVhm5mX5k361SAax/216LEWcVi4kcQNYZxrmKhSY3pnXO8vTFo4VwQ+UcfNanhdDhYYUSACQxLCZCbzk/o9AUkeXqyCU2JBYgkXIIZuXwaFYKo5R6B3/yTalYZC0HSAec86NaQZAz6cg9heuVhnzjIqThsl4d7TA/GVJUDvwL8Q+bywbl4KBeHDgwDn2DanNuFExg+ZxU4gKpAsNLAOZ4tPKkZW9BETzy5fNdhpJIAzjvUIAzyHl6YtBkkNkzANo4huNSC1oljd2LTQqQ2vAtxLX5HlOlFjNP9iIZ4ymOft2FSW8t+KVOQtSPz3tUJQ+bEW48zkfONcs8fmpB85VF4YVIac38PmnYVKPP1fnxo1MO028tUBOYMvae7sw01pUIIsW4c2HzegWS8340xQz7ZPQLUTJ8yvSoLJqDxogmLXtzjW/7qSWZoYes8Ihu1RwBp2Grx+XCP3wpLePVhKQXVIAYEiXUXNoax1504kKUmCOBkAhwdCSFOzsRmYamIwzkMn9W946ihUmQ4EgHJp4AQ1jyNGA0Fvw/60roxA4VdTjq3CmN1RBcgFX27zAG6R91rGNKrIALUzCwy9dHjzbeQNDZMMAOTV5OM9y5traPbswqpiQxOfPg5L636mnpwmYsQCIi4/wBHpXqZkkkjSN36YE7pVBLW41qbMCsuE9pZq89gLDNCRDmba/5TsD6mrDUQhRszhxFvas/JfiuyPTfT9s3Fg6V6JX1neSz14b6ckrN50rZ2rZ14ZG84HGONq4PLnGtff0T7VnHTvm1/jOs7atiyb0rY+mT+at7SgPu3e1Ya8vreOjOZx41ewnlrx4N5eh2bZl77gaMbM3gr2W1/TDuQJpGzbCw0NL/aWF/lm/XnsXBJX9wIe5q+fo6VhrQ7nQTStqQvfYZeTV3ZMdTMo1XbzsFxPx476lsW75yNqwsbDL2voM+Wte5+pofeavPbRsamsQH5d63xPaOPy5maxFbO0HK8jOzNzFMStQ+xyEliQHAs1syxI6mrBZKg7sL7rW/6IeCW6VXKWc+dedO54w62Ns+m4gwUYyyCkgoQ5BYANZ4Z4rBOFcN3HneritqUUs5POW/f4qubeP5aoqoWjCKiBJJiTGgA0py/pywEqUhQSqBYZlN8pBgtamYSA0g+eGmYmIUoKXhwWFibOQbmpki+M8bPwBzPJ250C1WEsLy4eZbIy1NWrdIIyMNlxfWkkSxLfFKqkLKY5er03F2la1rXifetf9lqJdyw3nBkgRmPSuGFqQIeONm48KSoZv8ArpWd+HwDt6ieOXP90opjgOecPTVuWHQMzzyvTv4xub5WlySChjpeIb8UpOmoEDrm/o2tTusb8PSe1qNSeRA/VulAlNZjjsdBTESAXgwbcsoM1C2BLSMqbuelQvZ1OzS/c270uDhAEvI5fHmVCo8NeulP3CkkESCxSRmMj1igUh387DOKOFwp8n4sYYlnjW3ahBLxfJrk5NxolJZpd54jh81yVgAiXJB6pdveoAFc9T5pQk8H5v8AFNUhSWEsZDHgxPZxSy3M6n8a29b0uBawkl4Ifp8xTUpY3II6MeOYL0pI4ecadvOe57z7114gHhpkVs7BhpP9iBxNZeCWnXThV7CWCLV6Hg5lWV7E2Ubu9vO1vOT01aUnDBDPD8G7Xis1ay0HgdJtVjZnQCFNc3l/1XVNdpq+PitDzrregw8cPnflH5qduUjeO6orTEsEk/aMpZi44gDWqKFGT61x+Tf/AKZ17D6Rtu4oEXSa3/qf1s4xBJrwGzbSza381rY2TbkBTgfa4gz6sKw1y3vPrTGp+Pd7ME4aEr333kyLMf8AKu7NtyNzfA3sjw5V47atsBLhWQYEMwYae9Lw9paxI4Pdsxzv1rn14vb7XTNT8ek2/wCrrMDOGqx9L2lK0SZ15zXmMdZUkaTep2LbChhR/jPX4fvOt/FR93tXHBAY1RXtZUQA7ZP80xe2sCL5Ucv4PaKm0XmL1m7XtCmKH+13ub2fmzdq1cT7mJt5esba0I+4ud5wwZwRLknLJg2db4vHL5s/OsjFEmkYqCkgxMwRYwxmDqDWkrZXG8IckCTw6Z61UxMK+vSeN/ata4ZfqoMPeLOLgVKcK73DduvStHZ9kcSwDh1MTug5nvTUbApUZe2tRxrn6yShg7/g+fNGU76XuRk2Wr8yzVZ2rZiIItQEQ0A5eaVFnGsyzVoc8ukcKYvZ1biV/wDMgSJabX/68mmYmHDuDM+N4xqxhJsGcOfj8VDSRklLFrzaZ+f9oxs6nAU6d4aGQ72Fw4fpWkdjgkZhjYxwrQ+n/R1bQlX3h0JJBUW+0WAfSYGppyT+jWbHktowiklJguxB8alqFXdrwWVugkmxtwYDXlGVUibe/wCqy1OVEBRBVu1+vajZ5eeVcon0A4Q2XnIWqOGYjDLPlapO60EnIxSFKb0/NGnaCWBLgBmKgwDkw9hJp9ipY7FwYeqoXBDxw1HLg/etFbFtGqvtKnIBJUyQA5dgkMEizJHKp1BqKCk828ahUG4eNTliWftSqyqELLufP8oQHolDKiQVEksVEycy5zL60UHJ7RLPOcv5FNRiZcvBSxhwkgglTwDIIj7hlMjUaVDefD61051wLWFV/AwiXLOMzMWk1mpWWt1+NP8Aa0dmWsJfL2OVdvg1P6cWF4ZaHjh3c0BVDM1O2PagXSph+nyqMbDc7wzn1rr+WdyrijiSHjQCXhpPP4NJSidGnLgb+3TWru04BAmDpmKQtAa8huzAAWuLaR34/JmyosCbvlVjZ1nLrOXGqiT50o8Ih29xa16y6lrYePZn0P49utaf08FQvY2duo5VjbOQ2ROX59PWtHY1qMCm1z+vRHHISEu4m3G762HahOzhR3n9eVqq4eu907VZ2dYbln8VN+NpI0l4dmSAwA/3j+KRtJSlF/uBgM45znVhG0Jbpeqe1LBUGNRL9XZ8+ELWsbw/sGuHY55/iszEUST8aeB62l74CUtkZyqqsZkCdGHGnmst57OM7FwVpZwQ4ezQfcUv+NzatRwSxmM6P+AA62rWac/+M65GBhDCBc/yPIaAPk16L/x/+AJO+3DnXnNoaPtbKH78/wAUeyn7gHIDgGJZ5YatWep7TnWmfHYT9fCd5QR/V396whs7uZd75Nz5+9eh21CC5d91UBQYqGpaByeqSdnLQA0TL6RwNO3kaZx2sleA33A2zdmJ5UOybRuOwB0rVxdigwRWfifTyxPGs/aHcWX4ubK60P8A8ubcLnkIjiKq/UVbhZCnDSzjzWrX0TZd4qALXzpP1VO6pmyarl+Lue57Xm9rLl54VWCLDOX8yz71prIRi7yN1YSp07yXSpjG8gwx0NVFpJUTrdoh3Zqx1XPckpjtUHO9WUofKKn+HPSoP1VP48gOpe3t6VC0M4zjpfzto9XMJAUqXY0zbEpSCM+QJaLPa3vqaVv0TPzpezKBSUvk7HhZqq7TgyWaJ5NS8BbKu1Tirp97D72KyiJjkD80CuWjcm8L8KaEgw4AkzweI1MdaStM/t6zrOpWkZFxDsLEuWnlwz0pJbOrCDpDgg53DWNjecnioTgEz7+XpTNv4TpvrwvlFSCxtXFxwI0PtRBi0hr2dsp7cYrVJ2zKnn+a1FLZISk5Tbw1jb9tBabC/g41bwMfhXV4fJJOKzVzCQJljDcZzJP28/arGAuH4+9UCtyWEaPRIVz/AM4V1Z8kn4uVqY+G6X8/yqQwz/YateSSDx0B9qJOKWYk5N155NS8XGiCXufYWzal5NzQ1ZShhP8AoetWTgf1dUKcxJhwN4Qz87a1XwVsYd+dO/kbNonzk1c/xBuAlh57Vq7PtKUg/a5cbpcwJji8VnYY1eIa3hqwkB+Hn4q5DXU4jubOf9rZwMNRQ4DsJIOuvevOpxTvOHYEtJcB3u3rxq7hbUqAIa5NLU6vOv8Aq7s61KWE5h4cc860tpw91Ln/ACsrDZwSZz5y3KtjbQUoQ60qCgTugn7X+az1PsXN8/WQr6ibTxOvLjfy6sLG3rl/ekYikpBF1H929KqDFYwX871UzGWt1rqxQSCBz9j5xrV2cpAeJyzrz2z4g3md5u8VrbMsq0DetLTXxXqzibQlRYirGHs7kMCHqpjbvGLtrHzWjsWNupC960M2l6yuvjqkV9p2Gfu/tm9VloSggAT5nVradv3iVG815vadpJVvPRJbPpWzL0iPp4xBvLXuJ146VX+qYyMNG40iCdTWZs/1ohJQpm7z8c6p7XtCVDjWdze/T9p+wz6VissrBgCh+qnel+FUtmcUW0JIrTvxHfnFJeBdjyi9u3mr1VVsxNamEh2mZJ5ePTlYLJ9/eorP16ykYLAkkQLZmfX8UIBP2n8U7btqcbrJsAC0/a9ub+gqgjGOdvG9faled+It5eNJYQhDFP33B4ZVj4yiXz6aVYxtuJG753qmtcc6nnKWtS/isSQdKYcc7m4wYkE8w4jQTOrCgUlzPvUER5m+XlqUtjLpaxUKmT+POlNJDgnqmwj81y8IskyxBYkMIhQSf+mMfFTwiEKY/qjx1pc7js5Z7tk7Z1KEO9i3LUDrf3ricssutEvIAKWbOWvc3s9SF5NOvV/OlGkqQQpJYiQoGQ2YItNAQwZv1kw4VaTgpKlCyASHIctkVC6uJAN7CwFjZiJ6zrpGQqshMZ8fye9NQYMeW961x8vTi4cMgAlJG85BZnyg5hwfWmI3N1QL70brWNn3n0mwpaFqYKUSb7ryON+9AsN8H8V09/qjP44JBDAOXPIWgmSBHHR66AC4L5NbiT1akqLG89G1u/pw7TtG0KWd5X/RJszu8/5Ua0VNwsQukE5gWdgXeDBbpXIxZmNeVVzEOQeMQ0v5PWiQTxgds+z1PsXWxhDTx6ssWsJ/yqK9t+1IASGSAWBG9Ly9zFxFqsjGBUyEKH2soE7xcAbyrBgZLZDOtc6ivb4cAR554aYjEYeTXKS7fcCClywMFv6lxq0iPWq+Ir/OPT9Uy9jl4xi/5aiVtRKWqqccgx3FBiLcFX/NnLmWdna+dBXRhxXPB/PBTMLC3ySCkMCZIDtkNTVfC3Wlyfa0v8N1owAJD9/elxP6ahQSrXkc/wAcK0tn2hMbpU+fN9dGrIH/AEXtl3/HrV7YsUB4aDLQ+VTr8beP9aK8aQba+Z1ZO0ILKdv/AJyJHKsfFxDIMW9belStYASA8O7mDy0jnU+rpmlle0O4yms/aFZS2j1C1knQa0aMIrfdBLCQBlZ6JE29Z5WfLeRUpBo9qDqcBn9vSuQTm/HOeNRop+r+z4YsL6a8PNKHFQSHuHYyHl8jJte1FsSwFBw4iNa0P5EFblIAd24aTlU9afxjoT9wEs4flnH7qxtONBAESzhuT1c27a0FZKEBCcgJaKz9txAQoWIPgjhS0JfjF2nDUwKpBJzDndLF2kG9x3qmY5aGdLdvaruLeq2MJqHPqKhBGtK3hx41Zx/jv4arrvIa9qVZuCQTmz+k3i7TXbo6a9aYnCfeO8AweTJkQOM+hqd1yQN1hIJULBzDs5JlrmgiQiCch86UxO8Uj7vtS5S//JP/AOf/AMveIeTLUxQQbFTsLszt93R7UsksZYXbJ9W1ijgKKi5LyXfi9c/kH45UWEd0hRDji7HsQfWh3e2VTw074ZuLg528zpYN+RHUjM+dL1KVecvDRAceWfOr/UCxAlxuu0XbSYHF+dSkelCElgwzbPPL09andF6uHFo7SvcAcsAwDxdyw4kAnpQkx9wIuxaTaC7BhdxqbuKQV5Bo9KZgbrpC97dJ+4pZ24BRA71XsaFAhnkefiu5kv8ADMPT0puxIdwU7zhiASJiQ2hs8VG04W4SH3hAcAs7CztItRy86kKSPBHWn4aFFP8A8js5bs4AnhSN4kzcR2gentVnZgWvB0dnln40QHJRzYm120c/rSrWBhl4DxHKaSo2BmtfYMRezhOKPtKwoB0mUmCZgjKDlW+YLBHDCkJKQd8f2Fw3/J4aHp0o46WM8Y88ivY/+K7TglT4qYIsA5MX/wArB/8AI8ZH8pVhwkGMm0MVXftnCs+dYals3tRbLtysLETiJUApBBSd0FiMmMEcKqrxJ6u9zx50sq7RU2prR/l3g5kqJJhpN2aPajUtJA1GduWdulVlYzn/AJEMw4C5/OtDvt1GV9c/ca0+nmcWEnOrez7WUpKYI45zfnWYhce7/E3pmzzxDeuT0v1rnXGivagzBIE3+PX2qF4klhDx+M/mm7qAoK3VqQAHCjukkCwUAWm3CqZXPvU340ml9CYkGZB5XrsFZEJJS73LODcHhSlbaopCVEkJfdGQJkw3Ok/+yWml7LlcoilLxmjWgXjRNn7kfM+tUV4pto/xWWtC640U7SwosXbAZf8A2sNWKdZ07vw4dRQDFrO6T/o1zthEPBqTtI3SGv581jjFijTjMMsr9aPYTa+tQZ89KroUgn733Ztd8r8WekDH4tQrxv3S6Wr0WOZA0HjcJpeItwElIcBrTJcPqdDUpLgvwZmZ3z6CgIft1j3j2popSfnKmpAbecOTD9QTo3rAoFC0fHr37UIHrbK4Z6XSEovwvbm80JEtaWl4PvFEVndIsILM9nzMi5oA9+XnGpoFirTBSCIZTl51BGXD1NA4zPna1QFkFxH7q0jZwWDLMPDD3MinPpKqVa289aJWsZP4KEkOxi2pyDnrdqPEcbyRHu12fz3ep+JcAe/wZfQX7VCUu8gMHnOg01zm/gpmGwuXyhw0Bi/PLhenKAhJiDPxRBfOlmrOBh7ySGAIkFy7N9wZ2OZytByLgXfpP1JezrC0NvB2cA6iRPGDVbaMYrUSZd4tx6VKtnVuhWoUbvbdBPqNaUgj4+avt5wJQ8HjerOCkqWxj4/FTh4AKN7ezsxdmcnTUUvAM3bTicuVPnFcXMYMHJL+mdGrbVHdBUSEj7MwJexgZnn3pWKXM9Zh9e1VcU9DaLRVzVhVoYe2FObH8+etK2naCT5rVIqjL14+dqHCxC7DMgc5BDE2lpo9/wCJOCxrHkiQ5ph2op30MkuRJYkMX+1QtJyvVUrLc8+cl9b51BUMn5fvXpUew4Z/JvHeJLkzm78TemFQdw954D/KSjES8pHNnboSxDRQrVZ89ONE0awVm7vT9mxJsImS0CYnPTwUUYjA8Rb1DxrP4rkrsfMqfsHp9v8ArKV4SEBCU7j/AHC6n11rOXtAZwGyudALGZkmf+oAas9O0kJKQbl7S4fPISedQokB8nI6hvSaLqKlX1Yv2vkGfn55elf+0QxBY5EG1mqiMZuMHW7emtLOIbecZrO6V7Li9oyAfSq6y8z+6WlYOZtcDNuJHgo8M8LMcn0vfP0FR3qbopaW86T+qEJJIAcnvlXokfTMXFw17SS+628okObhtZD1g4ih90Bne0i7AG/+Cnc8LpKlCuB08zoCq/nOuUONobhrWVqoaFqhjqIMs02yYn1rkYhBBB4h+GvmfWgTEkO1ptzGdcDEDP8AVEBykl9NADZ5oSq/pFN2PaVIUlSQlRSQQlaQpJ0CgbjhQlgTvOFbygWAYCbTd+wtV/wFBQkHv+PM6gqjh4IqQl3bIT3A9yKFxrOjQ8/rvwqaD8EAxPfvDZt6U3bMJIUSgKCf+Aq5ykhhrPCg2Qsd8CEsSOZb5rR+t/Vv5kYadxCdxO79obeaHVqYqpJ6hiEtI9dezN+DTV7c+7vfcEpCU70sNB696UvzznQYqemnKaz7/wAD/9k=" width="50">
+                </div>
+            </nav>
+
+            <section id="Tour">
+                <marquee width="90%" direction="right" onmouseover="stop()" onmouseout="start()" scrollamount="14">Contact us at NASA Official Website  for more information</marquee>
+                <iframe width="727" height="409" src="https://www.youtube.com/embed/TUKA7ToC8R0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+                   
+                    
+<h3>No matter who you are, how old you are or where on earth you come from, Space will always hold a unique fascination. Whether that stems from a love of Science Fiction or Space films or you simply love to gaze at the stars in the night’s sky – you simply cannot help but be in awe of the infinite, always evolving Space.
+
+    While we don’t get to sit gripped to TV rocket launches or moon landings like in previous generations, Space is now more accessible than ever. Thanks to ever emerging advances by NASA and scientists, we are discovering not only more about the galaxies but we are able to digest this information and enjoy it whatever your age or knowledge.</h3>
+                    
+ <img src="https://media.istockphoto.com/photos/outer-space-universe-nebula-star-cluster-bright-astronomy-science-picture-id1267065396?k=20&m=1267065396&s=170667a&w=0&h=KPEA-uXW61Vj7GyCzCwSj77SX5hf12-V61HkIrjpP5M=" border-style:solid;
+   >
+<h3> Take for example the recent Blood Moon on 27th July which saw Mars rising in the longest lunar eclipse of the 21st Century. Prior to this jaw-dropping phenomenon, we were able to discover where to view the eclipse at its most mesmerising best. We could even pinpoint the exact time that we’d be able to see the Red Moon from our small spot on Planet Earth. People are now able to enjoy Space together sharing pictures of the Blood Moon or going in groups to the best viewing spots. It’s ironic that we find out about these rare occurrences via the internet and social media but when we are actually there witnessing these phenomena, we have never felt so connected to real world.
+
+    Our Brainstorm Toys collection of Space toys appeals to adults as well as children and in 2018 we introduced a Desk Top Solar System to complement our existing range of Space items which include, My Very Own Solar System, My Very Own Moon, 2 in 1 Globe Earth and Constellations and Deep Space to name just a few.  With the planets changing and more discoveries every day there is always something to learn.  And until the next Moon landing on TV (or Virgin’s first Space flight!) we’ll keep checking the internet for signs of life on Mars and dusting off our eclipse glasses whenever we can.</h3>
+            <div class="container">
+
+                <div class="page-header" id="Campus">
+                    <h2 class="text-capitalize"> Important Celestial Bodies </h2>
+
+                    <div class="row">
+                        <!--1st Campus Life-->
+                        <div class="travel_mainDiv">
+                            <img class="img-responsive" src="https://www.innovationnewsnetwork.com/wp-content/uploads/2020/11/Black-hole-simulations-696x392.jpg">
+                            <h4 class="text-capitalize"><kbd>The Mysterious Black Hole </kbd></h4>
+                            <hr>
+                            <h5 class="text-dark text-left text-capitalize"><b>A black hole is a place in space where gravity pulls so much that even light can not get out. The gravity is so strong because matter has been squeezed into a tiny space. This can happen when a star is dying.
+
+Because no light can get out, people can't see black holes. They are invisible. Space telescopes with special tools can help find black holes. The special tools can see how stars that are very close to black holes act differently than other stars.</b>
+
+</h5>
+
+                        </div>
+                        <!--2nd Campus Life-->
+                        <div class="travel_mainDiv">
+                            <!--Give appropriate class below for the image img-responsive-->
+                            <img class="" src="data:image/jpeg;base64,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">
+                            <h4 class="text-capitalize"><kbd>The Magical Moon </kbd></h4>
+                            <hr>
+                            <!--Give classes below text-success text-left-->
+                          <h5 class="text-dark text-left text-capitalize"><b>Earth's Moon is the only place beyond Earth where humans have set foot.
+
+
+The brightest and largest object in our night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, creating a rhythm that has guided humans for thousands of years. The Moon was likely formed after a Mars-sized body collided with Earth.
+
+Earth's Moon is the fifth largest of the 200+ moons orbiting planets in our solar system.
+
+Earth's only natural satellite is simply called "the Moon" because people didn't know other moons existed until Galileo Galilei discovered four moons orbiting Jupiter in 1610.
+
+NASA currently has three robotic spacecraft exploring the Moon – Lunar Reconnaissance Orbiter and the twin ARTEMIS spacecraft (not to be confused with NASA's new Artemis program to send astronauts back to the Moon).
+                           
+
+                        </div>
+                        <!--3rd Campus life-->
+                        <div class="travel_mainDiv">
+                            <img class="img-responsive" src="https://www.ucf.edu/news/files/2021/06/asteroid_for_web.jpg">
+                            <!-- Give text-capitalize below to make the first letters in Capitals-->
+                            <h4 class=""><kbd> The Dangerous Asteriods </kbd></h4>
+                            <hr>
+                            <h5 class="text-dark text-left text-capitalize"><b>Asteroids, sometimes called minor planets, are rocky, airless remnants left over from the early formation of our solar system about 4.6 billion years ago.
+
+
+The current known asteroid count is: 1,113,527.
+
+Most of this ancient space rubble can be found orbiting the Sun between Mars and Jupiter within the main asteroid belt. Asteroids range in size from Vesta – the largest at about 329 miles (530 kilometers) in diameter – to bodies that are less than 33 feet (10 meters) across. The total mass of all the asteroids combined is less than that of Earth's Moon.</b></h5>
+                        
+                    </div>
+                </div>
+
+                <div class="page-header" id="Achievements">
+                    <h2 class="text-capitalize">Frequently Asked Questions About The Space </h2>
+                </div>
+                <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement1">
+                   Can a star turn into a planet? <i class="fa fa-sort-desc"></i>
+                </div>
+                <!--1st Achievement-->
+                <div id="school_achievement1" class="collapse">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                        <img src="https://wtamu.edu/~cbaird/sq/images/browndwarf.jpg" class="img-responsive img-thumbnail">
+                    </div>
+
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                        <h5 class="text-dark text-left text-capitalize"><b>Yes, a star can turn into a planet, but this transformation only happens for a very particular type of star known as a brown dwarf. 
+                            </b> </h5>
+                        
+                    </div>
+                </div>
+                <!--2nd Achievement-->
+                <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement2">
+                    Does sound travel faster in space?<i class="fa fa-sort-desc"></i>
+                </div>
+
+                <div id="school_achievement2" class="collapse">
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+
+                        <img src="https://wtamu.edu/~cbaird/sq/images/gpn-2000-000940.jpg" class="img-responsive img-thumbnail">
+                    </div>
+
+                    <div class="movie_text col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <h5 class="text-dark text-left text-capitalize"><b>Sound does not travel at all in space. The vacuum of outer space has essentially zero air. Because sound is just vibrating air, space has no air to vibrate and therefore no sound. If you are sitting in a space ship and another space ship explodes, you would hear nothing. Exploding bombs, crashing asteroids, supernovas, and burning planets would similarly be silent in space. In a space ship, you could of course hear the other passengers because your ship is filled with air.</b>
+                        </h5>
+                        
+                    </div>
+                </div>
+
+
+  <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement3">
+                  Galaxies look stationary, so why do scientists say that they rotate??<i class="fa fa-sort-desc"></i>
+                </div>
+
+                <div id="school_achievement3" class="collapse">
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+
+                        <img src="https://www.openaccessgovernment.org/wp-content/uploads/2017/05/dreamstime_s_52734504.jpg" class="img-responsive img-thumbnail">
+                    </div>
+
+                    <div class="movie_text col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <h5 class="text-dark text-left text-capitalize"><b>Galaxies do indeed rotate. This rotation is what gives typical galaxies a flattened round shape, a bit like how throwing and spinning pizza dough makes it round and flat. In terms of the tangential speed of its parts, galaxies rotate at an incredibly high speed. For instance, our entire solar system speeds along at about 500,000 miles per hour as it takes part in the galaxy's rotation. So why do galaxies look so frozen in place if their parts are moving so quickly? It's because galaxies are unimaginably huge. An object traveling at high speed across a very long distance appears to be moving slowly when viewed from far away. This is not a psychological effect. The object is actually traveling very slowly when its speed is expressed in terms of the percentage of the total distance it has to travel.</b>
+                        </h5>
+                    </div>
+                </div>
+                            
+  <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement4">
+                Have aliens ever visited earth?<i class="fa fa-sort-desc"></i>
+                </div>
+
+                <div id="school_achievement4" class="collapse">
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkIsSGE5hgmrxxJRM6p2GVYeQpX6uHwCFuHpiupDePntYrJySncEF6rMO0qnCRN5aYYK8&usqp=CAU" class="img-responsive img-thumbnail">
+                    </div>
+
+                    <div class="movie_text col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <h5 class="text-dark text-left text-capitalize"><b>Galaxies do indeed rotate. This rotation is what gives typical galaxies a flattened round shape, a bit like how throwing and spinning pizza dough makes it round and flat. In terms of the tangential speed of its parts, galaxies rotate at an incredibly high speed. For instance, our entire solar system speeds along at about 500,000 miles per hour as it takes part in the galaxy's rotation. So why do galaxies look so frozen in place if their parts are moving so quickly? It's because galaxies are unimaginably huge. An object traveling at high speed across a very long distance appears to be moving slowly when viewed from far away. This is not a psychological effect. The object is actually traveling very slowly when its speed is expressed in terms of the percentage of the total distance it has to travel.</b>
+                        </h5>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+                        
+             <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="books">
+            <h2 class="text-capitalize "> Books </h2>
+        </div>
+        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3> Bill Gates </h3>
+            <h4>
+                <mark class="header_entrepreneur">
+                    <i> <sup><i class="fa fa-quote-left"></i></sup>Reading is still the main way that I both learn new things and test my understanding.<sup><i class="fa fa-quote-right"></i></sup> </i></mark>
+            </h4>
+        </div>
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="text-capitalize "> list Of Books </h2>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" data-toggle="modal" data-target="#First_Space_Encyclopaedia">
+            <img src="s1.jpg" class="img-responsive">
+            <hr>
+            <p class="text-dark">First Space Encyclopaedia </p>
+        </div>
+
+        <div class="modal fade" id="First_Space_Encyclopaedia">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">First Space Encyclopaedia</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="s1.jpg" class="img-responsive img_modal">
+                        <p class="p-modal">Zoom off into the galaxy and investigate all the planets, from Earth to Mars with First Space Encyclopaedia. Packed full of stunning photography, quizzes and amazing facts, children will become space experts in no time. Covering everything from observatories and rockets, to the solar system and the death of stars, children will discover all about space and space travel.<br>
+                            <a href="https://www.amazon.in/First-Space-Encyclopaedia-DK/dp/0241293421/ref=sr_1_6?crid=176WU3JFDK2JP&keywords=books+on+space+for+kids&qid=1575444723&sprefix=books+on%2Caps%2C285&sr=8-6"><b> Best Buy Link </b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" data-toggle="modal" data-target="#Man_On_The_Moon">
+            <img src="s2.jpg" class="img-responsive">
+            <hr>
+            <p class="text-dark">Man On The Moon </p>
+        </div>
+
+        <div class="modal fade" id="Man_On_The_Moon">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Man On The Moon</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="s2.jpg" class="img-responsive img_modal">
+                        <p class="p-modal">Zoom off into the galaxy and investigate all the planets, from Earth to Mars with First Space Encyclopaedia. Packed full of stunning photography, quizzes and amazing facts, children will become space experts in no time. Covering everything from observatories and rockets, to the solar system and the death of stars, children will discover all about space and space travel.<br>
+                            <a href="https://www.amazon.in/First-Space-Encyclopaedia-DK/dp/0241293421/ref=sr_1_6?crid=176WU3JFDK2JP&keywords=books+on+space+for+kids&qid=1575444723&sprefix=books+on%2Caps%2C285&sr=8-6"><b> Best Buy Link </b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" data-toggle="modal" data-target="#Space_Encyclopaedia">
+            <img src="s3.jpg" class="img-responsive">
+            <hr>
+            <p class="text-dark">Space Encyclopaedia </p>
+        </div>
+
+        <div class="modal fade" id="Space_Encyclopaedia">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">First Space Encyclopaedia</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="s3.jpg" class="img-responsive img_modal">
+                        <p class="p-modal">Zoom off into the galaxy and investigate all the planets, from Earth to Mars with First Space Encyclopaedia. Packed full of stunning photography, quizzes and amazing facts, children will become space experts in no time. Covering everything from observatories and rockets, to the solar system and the death of stars, children will discover all about space and space travel.<br>
+                            <a href="https://www.amazon.in/First-Space-Encyclopaedia-DK/dp/0241293421/ref=sr_1_6?crid=176WU3JFDK2JP&keywords=books+on+space+for+kids&qid=1575444723&sprefix=books+on%2Caps%2C285&sr=8-6"><b> Best Buy Link </b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" data-toggle="modal" data-target="#There's_No_Place_Like_Space">
+            <img src="s4.jpg" class="img-responsive">
+            <hr>
+            <p class="text-dark">There's No Place Like Space </p>
+        </div>
+
+        <div class="modal fade" id="There's_No_Place_Like_Space">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">There's No Place Like Space</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="s4.jpg" class="img-responsive img_modal">
+                        <p class="p-modal">Zoom off into the galaxy and investigate all the planets, from Earth to Mars with First Space Encyclopaedia. Packed full of stunning photography, quizzes and amazing facts, children will become space experts in no time. Covering everything from observatories and rockets, to the solar system and the death of stars, children will discover all about space and space travel.<br>
+                            <a href="https://www.amazon.in/First-Space-Encyclopaedia-DK/dp/0241293421/ref=sr_1_6?crid=176WU3JFDK2JP&keywords=books+on+space+for+kids&qid=1575444723&sprefix=books+on%2Caps%2C285&sr=8-6"><b> Best Buy Link </b></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+                      <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="environment">
+            <h2 class="text-capitalize "> What's Going On In Space  </h2>
+        </div>
+        <ul class="list-group">
+            <li class=" list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li ">
+                <h4>India to launch communication satellite GSAT-24 for Tata Sky</h4>
+                <img src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2021/10/03/975999-gsat-24-tata-sky-isro.jpg" class="image-respoinsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12 ">Chennai: Public sector NewSpace India Ltd (NSIL) has decided to launch the communication satellite four-tonne GSAT-24 through Ariane-5 rocket belonging to European aerospace agency Arianespace.
+
+According to NSIL, GSAT-24, a four-tonne class communication Ku-band satellite built by the Indian Space Research Organisation (ISRO) will be put into orbit using an Ariane-5 rocket operated by Arianespace.The GSAT-24 satellite fully funded by the NSIL is expected to be launched during the first quarter of 2022.
+
+The entire satellite capacity on-board GSAT-24 will be leased to its committed customer Tata Sky for meeting their DTH application needs.The GSAT-24 satellite will be owned and operated by NSIL on a commercial basis.
+
+Speaking to IANS earlier, K. Sivan, Secretary, Department of Space and Chairman, ISRO said NSIL will acquire three communication satellites -- GSAT 20, GSAT 22 and GSAT 24 -- made by the ISRO.NewSpace India Ltd, apart from buying satellites made by ISRO can also lease assets from the latter.
+
+Queried about transferring ISRO`s other satellites to NSIL, Sivan had said: "We are thinking about asset transfer on lease basis. Plans are there."</p>
+            </li>
+            <li class=" list-group-item list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li ">
+                <h4>What is Geomagnetic storm that is set to hit Earth and may affect satellites, electricity grids?</h4>
+                <img src="https://english.cdn.zeenews.com/sites/default/files/2021/09/26/973962-geomagnetic-storm.jpg" class="image-respoinsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12 ">TNew Delhi: The Space Weather Prediction Center (SWPC), a unit of the US  National Oceanic and Atmospheric Administration department has issued that a geomagnetic storm is set to hit Earth on Sunday (September 26) and suggested the possibility of G1 or G2 storm conditions.
+
+What is a Geomagnetic Storm?
+A geomagnetic storm or solar storm is a ‘space weather’ event in which highly magnetised particles from the sun are ejected causing a Coronal Mass Ejection (CME). Geomagnetic storms are rated on a 1-5 scale, with 1 being the weakest and 5 having the most potential for damage.
+
+What happens when Geomagnetic storm hits the earth?
+Earth’s atmosphere protects all living beings from these particles. But the particles can interact with the Earth’s magnetic field and induce strong electric fields on the surface, which can severely affect the performance of space-borne and ground-based technological systems.
+
+These solar events can illuminate the sky with astonishing aurora but they also do considerable harm to electronics, electrical grids, and satellite and radio communications
+
+Earth’s experience with the solar storms
+These solar storms can affect the earth from several hours to several days. According to reports, on September 1-2 in 1859, a geomagnetic created extremely bright, vivid aurora throughout the planet and severely damaged the limited electrical and communication lines that existed at that time; telegraph systems around the world failed.  Some telegraph operators even reported about getting electric shocks.</p>
+            </li>
+        </ul>
+                     <section id="wri">
+        <h1> The Magical Milky Way  </h1>
+        <div class=" line60 "></div>
+      <a href="https://en.wikipedia.org/wiki/Milky_Way" target="_blank">
+            <img src="https://mediaproxy.salon.com/width/1200/height/675/https://media.salon.com/2020/12/milky-way-galaxy-1203202.jpg">
+
+    
